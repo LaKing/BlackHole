@@ -33,6 +33,7 @@ mv build/BlackHole.driver installer/root/$driverName$ch.driver
 rm -r build
 
 # Sign
+## Hint: To find valid identities: security find-identity -v -p codesigning
 codesign --force --deep --options runtime --sign Q5C99V536K Installer/root/$driverName$ch.driver
 
 # Create package with pkgbuild
